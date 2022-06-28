@@ -1,0 +1,35 @@
+.social-sticker {
+  transform: translate(0,-50%);
+  position: fixed;
+  right: 40px;
+  width: 32px;
+  top: 50%;
+	li {
+		padding: 5px 0;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: border-color 0.3s ease 0s;
+			border: 1px solid rgb(230, 230, 230);
+			border-radius: 50%;
+			height: 32px;
+			width: 32px;
+			svg {
+        color: inherit;
+				width: 14px;
+			}
+			&.fb svg {
+				width: 8px;
+			}
+			&.yt svg {
+				width: 13px;
+			}
+			&:hover,
+			&:active {
+				border-color: #5181b8;
+        color: #5181b8;
+			}
+		}
+	}
+}

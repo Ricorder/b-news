@@ -1,0 +1,124 @@
+.footer {
+	background-color: rgb(38, 39, 41);
+	color: rgba(255, 255, 255, 0.5);
+		line-height: 17px;
+		font-size: 14px;
+	a {
+		color: rgba(255, 255, 255, 0.5);
+	}
+	.container-inner {		
+		padding: 30px 40px 10px;
+		max-width: inherit;
+		width: 100%;
+		z-index: 2;
+	}
+	.top, .bottom {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: flex-end;
+		justify-content: space-between;
+		padding:20px 0;
+	}
+
+	.copy {
+		align-self: flex-start;
+	}
+	.subsc {
+		width: 650px;
+		.desc {
+			width:calc(100% - 290px);
+			line-height: 19px;
+			padding: 5px 0 0;
+			font-size: 14px;
+		}
+		.formbox {
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+			margin: 0 0 auto;
+			width: 260px;	
+			input {
+				display: flex;
+				position: relative;
+				max-width: calc(100% - 70px);
+				color: rgba(255, 255, 255, 0.5);
+				transition: background-color 0.3s ease 0s;
+				background-color:transparent;
+				height: 40px;
+				z-index: 1;
+			}
+			.button {
+				color: rgba(255, 255, 255, 0.5);
+				width: 70px;
+				z-index: 1;
+				padding:0;
+			}
+		}
+	}
+
+	.social {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		grid-area: c;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: border-color 0.3s ease 0s;
+			background-color:transparent;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			border-radius: 50%;
+			padding: 0px;
+			height: 44px;
+			width: 44px;
+			&:not(:first-child) {
+				margin-left: 19px;
+			}
+			&.yt svg {width: 20px;}
+			&:hover {
+				// box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+				// background-color: #a3a7aa;
+				// border-color: #fff;
+				background-color: #202123;
+				border-color: #6d6d6d;
+				svg {color: #fff;}
+			}
+		}
+	}
+
+	.terms {
+		display: flex;
+		align-items: flex-end;
+		justify-content:flex-start;
+		margin:0 auto 0 0;
+		max-width: 930px;
+		gap: 20px;
+		a {
+			text-transform: uppercase;
+			color: #a3a7aa;
+			font-size: 13px;
+			&:hover,
+			&:active,
+			.active {
+				color: #fff;
+			}
+		}
+	}
+
+	.contacts {
+		transition: border-color 0.3s ease 0s;
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		margin-left: auto;
+		width: 155px;
+		grid-area: e;
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 44px;
+			padding: 0;
+		}
+	}
+}

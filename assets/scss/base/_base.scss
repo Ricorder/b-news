@@ -1,0 +1,267 @@
+
+
+
+html {
+	--antd-wave-shadow-color: #3d3d3d;
+	scroll-behavior: smooth;
+}
+body {
+	//font-family: "Open Sans", sans-serif;
+	//font-family: "Biocad-Regular", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: $font-family;
+	overflow-wrap: break-word;
+	word-break: break-word;
+	text-transform: inherit;
+	letter-spacing: normal;
+	background: #fefefe;
+	font-variant: normal;
+	position: relative;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #102654;
+	font-size: 1rem;
+}
+a,
+img,
+input,
+button,
+textarea {
+	font-family: $font-family;
+	transition: all 0.3s ease;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+	display: table-cell;
+	line-height: unset;
+	text-align: center;
+	font-size: 11px;
+	height: auto;
+	border: 0;
+}
+span {
+	display: inline-block;
+}
+p {
+	padding: 10px 0;
+	margin: 0;
+}
+a,
+a:visited {
+	transition: color 0.3s ease 0s;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	color: $main;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: #09b3af;
+	outline: none;
+}
+
+b,
+strong {
+	font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: -0.01em;
+	font-weight: 700;
+	line-height: 1.3;
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	margin: 0 0 25px;
+	font-weight: 600;
+	font-size: 2rem;
+}
+h2 {
+	margin: 0 0 20px;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+hr {
+	border-color: rgba(0, 0, 0, 0.12);
+	border-width: 1px 0 0;
+	margin: 0;
+}
+
+
+ol {
+	counter-reset: counter;
+	li {
+		counter-increment: counter;
+		padding: 3px 0;
+		&::before {
+			content: counter(counter) '. ';
+			font-weight: 500;
+			color: #09b3af;
+		}
+	}
+}
+
+ul,
+ol {
+	li {
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+	}
+}
+
+label {
+	font-weight: 500;
+	cursor: pointer;
+	display: block;
+}
+
+.button,
+a.button,
+button.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #38393a;
+	background: #212121;
+	font-size: 0.875rem;
+	line-height: 40px;
+	appearance: none;
+	color: #09b3af;
+	border-radius:0;
+	cursor: pointer;
+	padding:0 26px;
+	height: 42px;
+	&:hover,
+	&:active {
+		background-color: #3d3d3d;
+		color: #fff;
+	}
+	&.white {
+		background: #fff;
+		color: #4c4c4c;
+		&:hover,
+		&:active {
+			background: #9c9595;
+			color: #fff;
+		}
+	}
+	&.outline {
+		border-color: #ddd;
+		background-color: transparent;
+		color: #09b3af;
+	}
+	&.ghost {
+		background-color: transparent;
+		border-color: transparent;
+	}
+	&.red {
+		background-color: $red;
+		border-color: $red;
+		color: #fff;	
+		// &:hover,&:focus,&:active {}
+	}
+	&.small {
+		height: 36px;
+	}
+}
+button,
+button.button {
+	line-height: normal;
+}
+
+input,
+textarea {
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-color: $input-bgc;
+	border: 1px solid $input-bgc;
+	font-size: $input-fs;
+	padding: $input-p;
+	font-weight: 400;
+	color: $input-c;
+	width: 100%;
+	&::placeholder {
+		color:inherit;
+		opacity:0.8;
+	}
+	&:hover {
+		background: $input-c-h;
+		box-shadow: none;
+	}
+	&.ghost {
+		background-color: transparent;
+		border-color: transparent;
+	}
+}
+textarea {
+	min-height: 80px;
+	resize: resize;
+	height: auto;
+}
+
+@media screen and (device-aspect-ratio: 9/16) {
+	textarea,
+	select,
+	select:focus,
+	input[type='text'],
+	input[type='password'],
+	input[type='datetime'],
+	input[type='datetime-local'],
+	input[type='date'],
+	input[type='month'],
+	input[type='time'],
+	input[type='week'],
+	input[type='number'],
+	input[type='email'],
+	input[type='tel'],
+	input[type='url'] {
+		font-size: 16px;
+	}
+}
+
+::-webkit-input-placeholder {
+	color: #222330;
+	opacity: 0.4;
+}
+:-ms-input-placeholder {
+	color: #222330;
+	opacity: 0.4;
+}
+::-moz-placeholder {
+	color: #222330;
+	opacity: 0.4;
+}
+:-moz-placeholder {
+	color: #222330;
+	opacity: 0.4;
+}
+
+:focus,
+:active {
+	outline: 0;
+}
+::selection,
+::-moz-selection {
+	background-color: #09b3af;
+	text-shadow: none;
+	color: #fff;
+}
+
+// @media screen and (max-width: "1200px") {}
+// @media screen and (max-width: "1024px") {}
+// @media screen and (max-width: '768px') {}

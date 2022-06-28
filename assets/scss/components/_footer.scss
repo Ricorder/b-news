@@ -1,0 +1,24 @@
+.footer {
+	border-top: 1px solid #38393a;
+	background: #12121b;
+	color: #a3a7aa;
+	padding: 35px 0;
+	.container-inner {
+		line-height: 30px;
+		height: 30px;
+	}
+	.logo-place {
+		a.logo {
+			// background: url('../../images/logo.svg') no-repeat 50% 50%;
+			display: block;
+			height: 30px;
+			width: 130px;
+		}
+	}
+}
+
+// @media screen and (max-width: 1540px) {}
+// @media screen and (max-width: 1200px) {}
+// @media screen and (max-width: 1024px) {}
+// @media screen and (max-width: 768px) {}
+// @media screen and (max-width: 568px) {}

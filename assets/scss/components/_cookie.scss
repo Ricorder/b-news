@@ -1,0 +1,57 @@
+.cookie-box {
+	border-top: 1px solid rgba(16, 38, 84, 0.1);
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);	
+	padding: 20px 40px;
+	background: #fff;
+	border-radius: 0;
+	transform: none;
+	position: fixed;
+	font-size: 15px;
+	display: block;
+	color: $black;
+	z-index: 1100;
+	width: 100%;
+	bottom: 0;
+	margin:0;
+	right: 0;
+	left: 0;
+	.cookie-text {
+		line-height: 21px;
+		color: #102654;
+		font-size: 15px;
+		a {
+			text-decoration: underline;
+			display: inline-block;
+			color: inherit;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	button.cookie-accept {
+		background-color: rgba(246, 100, 111, 0.8);
+		transform: translate(0,-50%);
+		color: rgb(255, 255, 255);
+		font-family: $font-family;
+		border:1px solid $red;
+		position: absolute;
+		padding: 12px 30px;
+		line-height: normal;
+		font-weight: 400;
+		font-size: 15px;
+		cursor: pointer;
+		height: auto;
+		right: 15px;
+		top: 50%;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 678px) {
+	.cookie {
+		width: 100%;
+		bottom: 0;
+		margin: 0;
+		right: 0;
+		left: 0;
+	}
+}

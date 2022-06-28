@@ -1,0 +1,50 @@
+/* Page Layout */
+.page-layout {
+	.page-wrap {
+		padding: 40px;
+	}
+	.page-header h1 {
+		margin-bottom: 72px;
+		line-height: 76px;
+		font-weight: 500;
+		font-size: 60px;
+		max-width: 70%;
+		color: $black;
+	}
+
+	.page-content {
+		transition: all 0.15s ease 0s;
+		font-family: $font-family-ibm;
+		line-height: 30px;
+		font-size: 17px;
+
+		h2 {
+			font-family: $font-family;
+			margin: 60px 0 25px;
+			line-height: 34px;
+			font-weight: 500;
+			font-size: 28px;
+			color: $black;
+		}
+
+		a,
+		a:visited {
+			color: inherit;
+			font-weight: 600;
+			text-decoration: underline;
+			&:hover,
+			&:active {
+				text-decoration: none;
+			}
+		}
+		p {
+			padding: 10px 0;
+		}
+	}
+}
+
+// @media screen and (max-width: 1440px) {}
+// @media screen and (max-width: 1200px) {}
+// @media screen and (max-width: 1024px) {}
+// @media screen and (max-width: 768px) {}
+// @media screen and (max-width: 414px) {}
